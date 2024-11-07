@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- boothstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <!-- font google -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
+
+    <!-- awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- button on top -->
+    <style>
+      #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 20px;
+        border: none;
+        outline: none;
+        background-color: #cf5eba;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+        margin-bottom: 150px;
+      }
+
+      #myBtn:hover {
+        background-color: #fc7cda;
+      }
+    </style>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Facilities l Magical Forest Park</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm sticky-top" style="border-bottom: 1px solid #89357a">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="img/Logo MFP1.png" alt="Logo" width="100" height="100" class="d-inline-block align-text-top" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">
+                <img src="img/home.svg" alt="" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="event.html">
+                <img src="img/calendar.svg" alt="" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeri.html">
+                <img src="img/image.svg" alt="" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="facilities.html">
+                <!-- <img src="img/tool.svg" alt=""> -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" class="bi bi-boxes" viewBox="0 0 16 16">
+                  <path
+                    d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434zM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567zM7.5 9.933l-2.75 1.571v3.134l2.75-1.571zm1 3.134 2.75 1.571v-3.134L8.5 9.933zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567zm2.242-2.433V3.504L8.5 5.076V8.21zM7.5 8.21V5.076L4.75 3.504v3.134zM5.258 2.643 8 4.21l2.742-1.567L8 1.076zM15 9.933l-2.75 1.571v3.134L15 13.067zM3.75 14.638v-3.134L1 9.933v3.134z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">
+                <img src="img/phone.svg" alt="" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="register.html">
+                <img src="img/log-in.svg" alt="" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a class="navbar-brand" href="https://book.jtp.id/jtpotp/?_ga=2.62550501.875944813.1730338733-1567866833.1730129257&_gl=1*1jln9pk*_ga*MTU2Nzg2NjgzMy4xNzMwMTI5MjU3*_ga_4EPMJ11PHW*MTczMDQ0MDg1OC43LjAuMTczMDQ0MDg1OC4wLjAuMA..">
+          <img src="img/Tiket.png" alt="Logo" width="90" height="60" class="d-inline-block align-text-top" />
+        </a>
+      </div>
+    </nav>
+
+    <!-- ucapan -->
+    <section id="home" class="home" style="text-align: center;">
+      <h1 class="display-4" style="color: #b852ad">Welcome to Our Facilities</h1>
+      <p class="lead">
+        Apa aja kalian tau, fasilitas apa aja yang ada diwisata ini? <br />
+        Yuk kita bahas
+      </p>
+    </section>
+
+    <!-- Services Start -->
+    <div class="container-fluid bg-light service py-5">
+        <div class="container py-5">
+          <div class="mx-auto text-center mb-5" style="max-width: 900px">
+            <h5 class="section-title px-3">Services</h5>
+            <h1 class="mb-0">Our Services</h1>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <div class="row g-4">
+                <div class="col-12">
+                  <div class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 pe-0">
+                    <div class="service-content text-end">
+                      <h5 class="mb-4">Magical Forest Wide Tours</h5>
+                      <p class="mb-0">
+                        Banyak banget loh fasilitas buat keliling hutan, kalian bisa jelajah hutan pakai buggy car atau kalian juga bisa pakai sepeda. <br />
+                        Banyak lagi fasilitas kendaraan yang ada disini, kalian bisa pilih sesuka hati dengan tarif murah.
+                      </p>
+                    </div>
+                    <div class="service-icon p-4">
+                      <i class="fa fa-globe fa-4x text-primary"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 pe-0">
+                    <div class="service-content text-end">
+                      <h5 class="mb-4">Mushola</h5>
+                      <p class="mb-0">
+                        Takut ninggalin sholat? eits tenang aja, dibeberapa titik ada mushola dan bonusnya kalian dijagain penghuni disana jadi sholat kalian aman dan nyaman tanpa gangguan makhluk jahat atau para anak anak peri ataupun makluk
+                        lainnya.
+                      </p>
+                    </div>
+                    <div class="service-icon p-4">
+                      <i class="fa fa-hotel fa-4x text-primary"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 pe-0">
+                    <div class="service-content text-end">
+                      <h5 class="mb-4">Travel Guides</h5>
+                      <p class="mb-0">
+                        Kalian bakal dapet pemandu yang gak kalah keren yang bakal pandu kalian dalam melewati kawasan, memberitahu dan memperingati kalian larangan yang ada jadi kalian gak akan dimakan makhluk penghuni disana jika kalian
+                        dalam pengawasan pemandu tour.
+                      </p>
+                    </div>
+                    <div class="service-icon p-4">
+                      <i class="fa fa-user fa-4x text-primary"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 pe-0">
+                    <div class="service-content text-end">
+                      <h5 class="mb-4">Event</h5>
+                      <p class="mb-0">Ada beberapa event juga loh baik dari tanggal nasional peri, troll dan lainnya ataupun dari luar magical forest yang gak kalah serunya.</p>
+                    </div>
+                    <div class="service-icon p-4">
+                      <i class="fa fa-cog fa-4x text-primary"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row g-4">
+                <div class="col-12">
+                  <div class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 ps-0">
+                    <div class="service-icon p-4">
+                      <i class="fa fa-globe fa-4x text-primary"></i>
+                    </div>
+                    <div class="service-content">
+                      <h5 class="mb-4">Ice & Techno Wide Tours</h5>
+                      <p class="mb-0">
+                        Selain wisata hutan, ada yang gak kalah seru nya lohh. Wisata ice & tecno bisa jadi pilihan klo kamu lagi nyari spot foto yang gak kalah cakep dengan hiasan lampu dan lainnya serta ada ice skating di bawah gunung es,
+                        kamu bisa belajar ice skating dengan tour guidemu.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 ps-0">
+                    <div class="service-icon p-4">
+                      <i class="fa fa-hotel fa-4x text-primary"></i>
+                    </div>
+                    <div class="service-content">
+                      <h5 class="mb-4">Losmen Reservation</h5>
+                      <p class="mb-0">
+                        Tenang aja, bagi kalian yang cape menjelajah kita menyediakan beberapa penginapan atau tempat beristirahat dibeberapa titik dan desa, tentunya jika kalian beruntung kalian bisa beristirahat di rumah para peri atau
+                        trol. Kalian bisa liat penunjuk arah jika ingin beristirahat.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 ps-0">
+                    <div class="service-icon p-4">
+                      <i class="fa fa-user fa-4x text-primary"></i>
+                    </div>
+                    <div class="service-content">
+                      <h5 class="mb-4">Direction Guides</h5>
+                      <p class="mb-0">
+                        Jika kalian terpencar dengan pemandu kalian atau tersesat, kalian bisa tekan tombol pada remot yang kalian bawa nanti bakal ada petugas penunjuk arah yang akan mengarahkan kalian ke jalan yang benar. Tapi tenang aja
+                        dibeberapa titik juga ada petugas penunjuk arah kok.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 ps-0">
+                    <div class="service-icon p-4">
+                      <i class="fa fa-cog fa-4x text-primary"></i>
+                    </div>
+                    <div class="service-content">
+                      <h5 class="mb-4">Event Management</h5>
+                      <p class="mb-0">Bakal ada tim yang bakal bantu berjalannya event, dan juga bantu kalian yang ingin memeriahkan eventnya.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="text-center">
+                <a class="btn btn-primary rounded-pill py-3 px-5 mt-2" href="facilities.html">Service More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Travel Guide -->
+    <div class="container-fluid guide py-5">
+        <div class="container py-5">
+          <div class="mx-auto text-center mb-5" style="max-width: 900px">
+            <h5 class="section-title px-3">Our Team</h5>
+            <h1 class="mb-0">Meet Our Team</h1>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+              <div class="guide-item">
+                <div class="guide-img">
+                  <div class="guide-img-efects">
+                    <img src="img/h1.jfif" class="img-fluid w-100 rounded-top" style="height: 200px" alt="Image" />
+                  </div>
+                  <div class="guide-icon rounded-pill p-2">
+                    <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-whatsapp"></i></a>
+                    <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                  </div>
+                </div>
+                <div class="guide-title text-center rounded-bottom p-4">
+                  <div class="guide-title-inner">
+                    <h4 class="mt-3">Agus Budiyanto</h4>
+                    <p class="mb-0">Leader of Tour Guide</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="guide-item">
+                <div class="guide-img">
+                  <div class="guide-img-efects">
+                    <img src="img/w6.jpg" class="img-fluid w-100 rounded-top" style="height: 200px" alt="Image" />
+                  </div>
+                  <div class="guide-icon rounded-pill p-2">
+                    <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-whatsapp"></i></a>
+                    <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                  </div>
+                </div>
+                <div class="guide-title text-center rounded-bottom p-4">
+                  <div class="guide-title-inner">
+                    <h4 class="mt-3">Bastian Hermansyah</h4>
+                    <p class="mb-0">Leader of Direction Guide</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="guide-item">
+                <div class="guide-img">
+                  <div class="guide-img-efects">
+                    <img src="img/w2.jpg" class="img-fluid w-100 rounded-top" style="height: 200px" alt="Image" />
+                  </div>
+                  <div class="guide-icon rounded-pill p-2">
+                    <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-whatsapp"></i></a>
+                    <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                  </div>
+                </div>
+                <div class="guide-title text-center rounded-bottom p-4">
+                  <div class="guide-title-inner">
+                    <h4 class="mt-3">Anang Satria</h4>
+                    <p class="mb-0">Area Manager</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="guide-item">
+                <div class="guide-img">
+                  <div class="guide-img-efects">
+                    <img src="img/w1.jpeg" class="img-fluid w-100 rounded-top" style="height: 200px" alt="Image" />
+                  </div>
+                  <div class="guide-icon rounded-pill p-2">
+                    <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                </div>
+                <div class="guide-title text-center rounded-bottom p-4">
+                  <div class="guide-title-inner">
+                    <h4 class="mt-3">Hayati Arumsari</h4>
+                    <p class="mb-0">Manager</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial -->
+    <div class="container-fluid testimonial py-5">
+        <div class="container py-5">
+          <div class="mx-auto text-center mb-5" style="max-width: 900px">
+            <h5 class="section-title px-3">Testimonial</h5>
+            <h1 class="mb-0">Our Customer Say!!!</h1>
+          </div>
+          <div class="testimonial-carousel owl-carousel">
+            <div class="testimonial-item text-center rounded pb-4">
+              <div class="testimonial-comment bg-light rounded p-4">
+                <p class="text-center mb-5">Tempat healing paling seru yang pernah aku temuin, kesini gak pernah bosen bosen.</p>
+              </div>
+              <div class="testimonial-img p-1">
+                <img src="img/w6.jpg" class="img-fluid rounded-circle" alt="Image" />
+              </div>
+              <div style="margin-top: -35px">
+                <h5 class="mb-0">Michele Agustin</h5>
+                <p class="mb-0">Content Creator Tiktok</p>
+                <div class="d-flex justify-content-center">
+                  <i class="fas fa-star text-primary"></i>
+                  <i class="fas fa-star text-primary"></i>
+                  <i class="fas fa-star text-primary"></i>
+                  <i class="fas fa-star text-primary"></i>
+                  <i class="fas fa-star text-primary"></i>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-item text-center rounded pb-4">
+              <div class="testimonial-comment bg-light rounded p-4">
+                <p class="text-center mb-5">Wahana nya seru banget, apalagi nyari misteri sumpah susah banget. Ketagihan pengen kesana lagi, bakal jadi wisata favorit sih ini.</p>
+              </div>
+              <div class="testimonial-img p-1">
+                <img src="img/w3.jpg" class="img-fluid rounded-circle" alt="Image" />
+              </div>
+              <div style="margin-top: -35px">
+                <h5 class="mb-0">Sidiq Yahya</h5>
+                <p class="mb-0">Content Creator Youtube</p>
+                <div class="d-flex justify-content-center">
+                  <i class="fas fa-star text-primary"></i>
+                  <i class="fas fa-star text-primary"></i>
+                  <i class="fas fa-star text-primary"></i>
+                  <i class="fas fa-star text-primary"></i>
+                  <i class="fas fa-star text-primary"></i>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-item text-center rounded pb-4">
+              <div class="testimonial-comment bg-light rounded p-4">
+                <p class="text-center mb-5">Wisata yang mengedukasi, disini juga diajarkan cara mematuhi peraturan dan hukumannya gak main main, bagus banget buat pendidikan.</p>
+              </div>
+              <div class="testimonial-img p-1">
+                <img src="img/w4.jpeg" class="img-fluid rounded-circle" style="height: 112px; width: 112px" alt="Image" />
+              </div>
+              <div style="margin-top: -35px">
+                <h5 class="mb-0">Bunga Lestari</h5>
+                <p class="mb-0">Gubernur Jawa Tengah</p>
+                <div class="d-flex justify-content-center">
+                  <i class="fas fa-star text-primary"></i>
+                  <i class="fas fa-star text-primary"></i>
+                  <i class="fas fa-star text-primary"></i>
+                  <i class="fas fa-star text-primary"></i>
+                  <i class="fas fa-star text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Booking Tiket -->
+    <div class="container-fluid booking py-5">
+        <div class="container py-5">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+              <h5 class="section-booking-title pe-3">Buy</h5>
+              <h1 class="text-white mb-4">Online Ticket</h1>
+              <p class="text-white mb-4">Bingung beli tiket online? Kalian bisa isi disini atau di pojok kanan atas di icon 'buy ticket here'</p>
+              <p class="text-white mb-4">Atau kalian mau simple? langsung aja order disini, disini juga tak kalah menariknya loh harga ticketnya. Langsung aja buruan beli!</p>
+              <a href="#" class="btn btn-light text-primary rounded-pill py-3 px-5 mt-2">Buy Ticket Via Website Ticket</a>
+            </div>
+            <div class="col-lg-6">
+              <h1 class="text-white mb-3">Get Ticket Here</h1>
+              <p class="text-white mb-4">Get <span class="text-warning">25% Off</span> On Your First Adventure Trip With Magical's Website.</p>
+              <form>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input type="text" class="form-control bg-white border-0" id="name" placeholder="Your Name" />
+                      <label for="name">Your Name</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input type="email" class="form-control bg-white border-0" id="email" placeholder="Your Email" />
+                      <label for="email">Your Email</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating date" id="date3" data-target-input="nearest">
+                      <input type="text" class="form-control bg-white border-0" id="datetime" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" />
+                      <label for="datetime">Date & Time</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <select class="form-select bg-white border-0" id="select1">
+                        <option value="1">All Destination</option>
+                        <option value="2">Ice Destination 2</option>
+                        <option value="3">Forest Destination 3</option>
+                      </select>
+                      <label for="select1">Destination</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <select class="form-select bg-white border-0" id="SelectPerson">
+                        <option value="1">Persons 1</option>
+                        <option value="2">Persons 2</option>
+                        <option value="3">Persons 3</option>
+                      </select>
+                      <label for="SelectPerson">Persons</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <select class="form-select bg-white border-0" id="CategoriesSelect">
+                        <option value="1">Kids</option>
+                        <option value="2">1</option>
+                        <option value="3">2</option>
+                        <option value="3">3</option>
+                      </select>
+                      <label for="CategoriesSelect">Categories</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <textarea class="form-control bg-white border-0" placeholder="Special Request" id="message" style="height: 100px"></textarea>
+                      <label for="message">Special Request</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-primary text-white w-100 py-3" type="submit">Buy Now</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- FEEDBACK -->
+    <section class="feedback">
+        <div class="container">
+          <header class="heroo">
+            <h1 class="display-4 mt-5 text-center" style="color: #b852ad">Pendapat Customer</h1>
+            <p>Kami menghargai pendapat Anda!</p>
+          </header>
+  
+          <section class="feedback-form">
+            <h2>Beri Kami Pendapat Anda</h2>
+            <form>
+              <div class="form-group">
+                <label for="name">Nama Anda</label>
+                <input type="text" class="form-control" id="name" placeholder="Masukkan nama Anda" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Anda</label>
+                <input type="email" class="form-control" id="email" placeholder="Masukkan email Anda" required />
+              </div>
+              <div class="form-group">
+                <label for="feedback">Pendapat Anda</label>
+                <textarea class="form-control" id="feedback" rows="4" placeholder="Masukkan pendapat Anda" required></textarea>
+              </div>
+              <div class="form-group">
+                <label for="rating">Rating (1-5)</label>
+                <select class="form-control" id="rating" required>
+                  <option value="">Pilih rating</option>
+                  <option value="1">1 - Sangat Buruk</option>
+                  <option value="2">2 - Buruk</option>
+                  <option value="3">3 - Cukup</option>
+                  <option value="4">4 - Baik</option>
+                  <option value="5">5 - Sangat Baik</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary mb-5" style="margin-top: 10px">Kirim Pendapat</button>
+            </form>
+          </section>
+        </div>
+      </section>
+  
+      <!-- DUKUNGAN PELANGGAN -->
+      <section class="dukungan">
+        <div class="container">
+          <header class="hero">
+            <h1 class="display-4 mt-5 text-center" style="color: #b852ad">Dukungan Customer</h1>
+            <p>Kami di sini untuk membantu Anda!</p>
+          </header>
+  
+          <section class="mt-5">
+            <h2>Informasi Dukungan</h2>
+            <p>Kami menyediakan berbagai layanan dukungan untuk membantu Anda dengan masalah yang mungkin Anda hadapi. Silakan lihat informasi di bawah ini untuk mendapatkan bantuan yang Anda butuhkan.</p>
+  
+            <ul>
+              <li>FAQ - Pertanyaan yang Sering Diajukan</li>
+              <li>Panduan Pengguna</li>
+              <li>Kontak Tim Dukungan</li>
+            </ul>
+          </section>
+          <section class="contact-form">
+            <h2>Hubungi Kami</h2>
+            <form>
+              <div class="form-group">
+                <label for="name">Nama Anda</label>
+                <input type="text" class="form-control" id="name" placeholder="Masukkan nama Anda" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Anda</label>
+                <input type="email" class="form-control" id="email" placeholder="Masukkan email Anda" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Pesan Anda</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Masukkan pesan Anda" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary mb-3" style="margin-top: 10px">Kirim</button>
+            </form>
+          </section>
+        </div>
+      </section>
+  
+      <!-- maps -->
+      <div class="container py-5">
+        <div class="row g-5 align-items-center">
+          <div class="col-12">
+            <div class="rounded">
+              <iframe
+                class="rounded w-100"
+                style="height: 450px"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1555.1927893518946!2d109.67826836373415!3d-6.942039697788963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7023b8538a266f%3A0xda8bd2dd79629a1a!2skirana%20collection!5e0!3m2!1sid!2sid!4v1730617913574!5m2!1sid!2sid"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- tombol otomatis ke atas -->
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+  
+      <!-- footer -->
+      <footer class="text-dark text-center text-lg-start bg-white">
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!--Grid row-->
+          <div class="row mt-4">
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4 text-center">Address</h5>
+              <p>Jl. lapangan Remaja Watusalam no.114, Buaran, Pekalongan, Jawa Tengah 51171</p>
+              <a href="https://maps.app.goo.gl/7oj4W7bD1LSZ1bRw8" target="_blank">Maps link</a>
+              <p>Magical Forest Park | Pekalongan</p>
+  
+              <div class="mt-4">
+                <!-- Facebook -->
+                <a type="button" class="btn btn-floating btn-primary btn-lg"><i class="fab fa-facebook-f"></i></a>
+                <!-- Twitter -->
+                <a type="button" class="btn btn-floating btn-primary btn-lg"><i class="fab fa-twitter"></i></a>
+                <!-- Google + -->
+                <a type="button" class="btn btn-group-sm btn-danger btn-lg"><i class="fab fa-instagram"></i></a>
+                <!-- Linkedin -->
+              </div>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4 pb-1 text-center">About</h5>
+  
+              <div class="form-outline form-white mb-4"></div>
+  
+              <ul class="fa-ul" style="margin-left: 1.65em">
+                <li class="mb-3">
+                  <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Buaran, Kota Pekalongan</span>
+                </li>
+                <li class="mb-3">
+                  <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">salikasabilla05@gamil.com</span>
+                </li>
+                <li class="mb-3">
+                  <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2"><a href="https://wa.me/qr/YQJKXY3WMW7RH1">+62 857 1341 1482</a></span>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4 text-center">Open</h5>
+  
+              <table class="table text-center text-dark">
+                <tbody class="font-weight-normal">
+                  <tr>
+                    <td>Senin - Kamis</td>
+                    <td>08:00 - 22:00</td>
+                  </tr>
+                  <tr>
+                    <td>Jumat</td>
+                    <td>24 jam</td>
+                  </tr>
+                  <tr>
+                    <td>Sabtu</td>
+                    <td>08:00 - 22:00</td>
+                  </tr>
+                  <tr>
+                    <td>Ahad</td>
+                    <td>24 jam</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+  
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: #89357a">
+          © Magical Forest Park:
+          <a class="text-white" href="https://mdbootstrap.com/">2024 All Rights Reserved.</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+  
+      <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+  
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+          scrollFunction();
+        };
+  
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+  
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+      </script>
+  
+      <!--Start of Tawk.to Script-->
+      <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+          Tawk_LoadStart = new Date();
+        (function () {
+          var s1 = document.createElement("script"),
+            s0 = document.getElementsByTagName("script")[0];
+          s1.async = true;
+          s1.src = "https://embed.tawk.to/672860f74304e3196adcbacd/1ibqrli03";
+          s1.charset = "UTF-8";
+          s1.setAttribute("crossorigin", "*");
+          s0.parentNode.insertBefore(s1, s0);
+        })();
+      </script>
+      <!--End of Tawk.to Script-->
+    
+</body>
+</html>
